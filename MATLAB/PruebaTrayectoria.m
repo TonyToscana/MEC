@@ -5,12 +5,12 @@ close all;
 clear all;
 
 %Definición de los puntos de la trayectoria (considerar escenario de 10x10m)
-Puntos = ;
+Puntos = [3 2;8 10;2 6];
 %Definición del incremento inc (entre 0 y 1)
-inc = ;
+inc = 0.01;
 
 %Generación de la trayectoria (descomentar la función que se desee utilizar)
-%path = CurvaBezier3Puntos(Puntos,inc);
+path = CurvaBezier3Puntos(Puntos,inc);
 %path = SplineCubicaNatural3Puntos(Puntos,inc);
 %path = CurvaBezier4Puntos(Puntos,inc);
 %path = SplineCubicaNatural4Puntos(Puntos,inc);
